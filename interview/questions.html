@@ -1,0 +1,1045 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Interview Questions</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="backbutton"> <a href="index.html"> back </a> </div>
+    <h1>Interview Questions</h1>
+
+    There are three types of interviews: <a href="#informational">informationals</a>, <a href="#screen">phone screens</a>, and <a href="#onsite">onsites</a>.
+    The informational is the first meeting with a company and it is usually a phone chat with a recruiter.
+    A screening is a one hour test, by phone or in person, to assess your technical skills.
+    I also had many “informationals” with hiring managers, and 80+% of the time I was asked technical questions.
+    Unless their title explicitly says recruiter then you need to expect technical questions.
+    <br /><br />
+    The onsite is the final stage.
+    It’s 3 to 6 interview sessions with individual or pairs of interviewers.
+    And if things will go well, some companies will have you meet with the hiring manager at the end.
+    <br /><br />
+    Simply knowing memorizing will not help you. It is best to solve these questions on a white board.
+    Read the <a href="prep.html">section on preparing for an interview</a> for more details.
+    <br /><br />
+
+    <h2><a id="informational">A. Informational Questions</a></h2>
+    Here are the questions I have been asked by recruiters. 
+    These are aimed at determining your skill set, interests, and personality. 
+    Similar questions were asked in the later stages too. 
+    <ol class="list">
+        <li>
+            <b>Why do you want to work for us?</b>
+            <br /><br />
+            If you can’t answer this question then you shouldn’t have applied.
+            Companies want to hear: “I am looking for a challenge.”,
+            “I love your company’s products and want to work on something I’m passionate about.”,
+            and “I learned your company culture values x, y, and z. These things are important to me.”
+            <br />
+            One time I told a .NET shop that I wanted to get away from Microsoft technology and work with open source software.
+            Unsurprisingly, I did not get a call back. Don’t be stupid. Don’t lie.
+            Research the company and tell the truth.
+        </li>
+
+        <li>
+            <b>Why do you want to leave your current company?</b>
+            <br /><br />
+            This is similar to question 1.
+            Be positive. Don't say "I hate my boss" or "They never gave me a raise."
+            I told a hiring manager that I didn't like the people who did <em>xyz</em> at my company.
+            His response was "I was a xyz there." 
+            Can you guess if I got an offer afterwards?
+        </li>
+
+        <li>
+            <b>Have you used our product? What do you know about our product?</b>
+            <br /><br />
+            Also similar to question 1.
+            Companies like candidates who do their research ahead of time.
+            And it is especially important for companies like Apple and Tableau.
+            In fact, being familiar with the product is one of Tableau's founding values.
+        </li>
+
+        <li>
+            <b>How can you improve our product?</b>
+            <br /><br />
+            I hear this question often from consumer facing websites/apps.
+            Answering correctly demonstrates you have done your homework and you can advocate for the end user.
+        </li>
+
+        <li>
+            <b>Generic behavioral questions like “tell us a difficult problem you overcame.”</b>
+            <br /><br />
+            These types of questions are covered in 
+            <a href="http://www.amazon.com/gp/product/098478280X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=098478280X&linkCode=as2&tag=wwwocfberkele-20&linkId=R46CSL6J6Z3MDGEY">
+            both</a>
+            of the 
+            <a href="http://www.amazon.com/gp/product/1118261364/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118261364&linkCode=as2&tag=wwwocfberkele-20&linkId=XJKSG3OV4MRCOSE2">
+            books</a>
+            as well as sites on the web.
+        </li>
+    </ol>
+    
+    <h2><a id="screen">B. Phone Screen Questions</a></h2>
+    These are more technical, but you can still get asked questions from informationals. 
+    If you have the option to do it in person then go to their office.
+    Otherwise, get familiar with the webtool ahead of time.
+    Majority of companies used <a href="http://code.stypi.com/">http://code.stypi.com/</a>.
+
+    <ol class="list">
+        <li>
+            <b>What is your biggest achievement? Biggest programming challenge?</b>
+            <br /><br />
+            They want to hear what you can do. 
+            If you are a senior engineer, this is your chance to sell yourself. 
+            Tell them about an ass kicking project you did that saved the company millions of dollars. 
+            Go deep and go big. And this will often be asked during the onsite too.
+        </li>
+
+        <li>
+            <b>Implement an arraylist. Need constant time for adding and removing elements.</b>
+            <br /><br />
+            Implementing an arrayList/vector is generic but I couldn’t figure out a good way to fill up the gaps in the array when elements were removed.
+            If you figure out a good solution then please share it with us.
+        </li>
+
+        <li>
+            <b>Given a maze represented by a grid and a robot. Write code that helps the robot travel from a starting point to the end.
+            The robot has the following API:
+            <br /><br />
+            Interface robot<br /><!--TODO: learn how to do indentation-->
+            {<br />
+                CanGo() //checks to see if it can travel in the direction it is facing.<br />
+                TurnRight() // changes direction<br />
+                IsAtFinish() //returns true if standing at the end of the maze.<br />
+                Go() //moves 1 step in the direction it is facing.<br />
+            }<br /><br />
+
+            r - starting point. <br />
+            X - blocked area. <br />
+            f - finish.
+            <br /><br />
+            </b>
+            <table height=160 width=160 border="1" cellspacing="2" cellpadding="2">
+                <tr>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>r</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>f</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+            </table>
+            <br /><br />            
+            <b>Hint: the accesible paths have only a width of 1.</b>
+            <br /><br />
+            Can be solved as generic graph traversal problem. But if you take advanage of the hint then you don't need to remember where you have traveled.
+        </li>
+
+        <li>
+            <b>Output the elements of a binary search tree in order. Follow up: Given the root node and another node of the BST, find the next node in order.</b>
+            <br /><br />
+            Part 1 is basic tree traversal. And Part 2 is a generic BST problem that you should master.
+        </li>
+
+        <li>
+            <b>Find the duplicate elements in a string.</b>
+            <br /><br />
+            This is doable in linear time with a single pass.
+        </li>
+
+        <li>
+            <b>Describe abstraction, encapsulation, polymorphism.</b>
+            <br /><br />
+            I also got asked: is-a and has-a? 
+            Abstract class vs interface? 
+            Class vs isntance?
+            DFS vs BFS?
+            BST vs array?
+            These are basic 101 concepts.
+            And are probably asked to see how well you can communicate a simple idea.
+            Make sure you have a clear and concise answer for each.
+        </li>
+
+        <li>
+            <b>Design an LRU cache.</b>
+            <br /><br />
+            Standard questions that gets asked a lot. Hint: it requires two data structures.
+        </li>
+
+        <li>
+            <b>Given an array of positive and negative integers. Find the starting index and length of sub-array with the largest sum.</b>
+            <br /><br />
+            Can be done in linear time with constant memory.
+        </li>
+
+        <li> <!--TODO: draw tree pictures-->
+            <b>The nodes in a standard binary tree contain a next pointer that points to NULL.
+            Change the next pointer to point to the nearest node to the right and on the same level.</b>
+            <br /><br />
+            Most people solve this using queues, which is O(N) space.        
+            You can really impress your interviewer if you do it with O(1) space.
+            I giggled like a school girl when two different companies asked this in the same day.
+        </li>
+
+        <li>
+            <b>Given an n x m matrix of ints.
+            Each int/square has a value of 1 or 0.
+            Two squares are connected if both have a value of 1 and they are next to each other (diagonals do not count).
+            The area is the sum of all connected squares.
+            A single square has an area of 1. Calculate the median of all the areas.
+            n and m are 1024 at most.</b>
+            <br /><br />
+            <table height=100 width=120 border="1" cellspacing="2" cellpadding="2">
+
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <br /><br />
+            <b>The example has three areas with sizes 1, 3, and 4.
+            The median is 3.</b>
+            <br /><br />
+            Think about which data structure to use for the median for best performance.
+            There are also multiple ways to parse the areas.
+        </li>
+
+        <li>
+            <b>Databases for Twitter are eventually consistent.
+            But when a user creates a login it needs to be unique and guaranteed.
+            Design a system to support this.</b>
+            <br /><br />
+            Interviewer wanted me to describe <a href="http://en.wikipedia.org/wiki/Paxos_algorithm"> paxos</a>.
+        </li>
+
+        <li>
+            <b>Given an array of arrays of sorted ints. Returned the kth largest.</b>
+            <br /><br />
+            Variations of this were asked three times.
+            Run time should be O(k * log n), where n is the number of arrays.
+            If n is 2 then it can solved in O(log k).
+        </li>
+
+        <li>
+            <b>Class vs instance? Follow up: what is a virtual function and how are they implemented? </b>
+            <br /><br />            
+            <a href="http://en.wikipedia.org/wiki/Virtual_method_table">http://en.wikipedia.org/wiki/Virtual_method_table</a>
+        </li>
+
+        <li>
+            <b>Find all of the phone numbers in 50k files? </b>
+            <br /><br />
+            Use regular expression.
+            Know how to do this with command line commands.
+            Or in a Perl script.
+        </li>
+
+        <li>
+            <b>Reverse a null terminated string. </b>
+            <br /><br />
+            An easy question does not mean the interview is a cupcake.
+            I assume easy questions are graded harder--how fast and how well did you finish?
+            Test cases, etc.
+        </li>
+
+        <li>
+            <b>Implement binary search to find values from an array of sorted floats. </b>
+            <br /><br />
+            Same as above. Beaware of cupcakes.
+        </li>
+
+        <li>
+            <b>Convert a string to a long. </b>
+            <br /><br />
+            Standard atoi.
+        </li>
+
+        <li>
+            <b>Create the add and delete functions for a tri-nary search tree. It is like a binary search tree except there is a middle pointer and duplicates are allowed. 
+            This middle pointer points to nodes with identical values. </b>
+            <br /><br />
+            Not really different from BST.
+        </li>
+    </ol>
+    
+    <h2><a id="onsite">C. Onsite Questions</a></h2>
+    Mostly a mixture of coding and design questions. But questions from previous sections are also asked during onsite interviews.
+
+    <ol class="list">
+        <li>
+            <b> Given a N x M sized <a href="http://boggle-game.com/rules-boggle.php"> Boggle</a> board. Find all of the valid words.</b>
+            <br /><br />
+            This got asked twice.
+        </li>
+        <li>
+            <b> Make the game <a href="https://www.youtube.com/watch?v=WYSupJ5r2zo">asteriods</a>. Code it.</b>
+            <br /><br />
+            Break the problem into work items and implement it.
+        </li>
+        <li>
+            <b> Given an n-ary tree and m number of nodes, how do you find the first common parent? If the nodes had parent pointer, how would you do it?</b>
+            <br /><br />
+            You can extrapolate from the binary tree case.
+        </li>
+        <li>
+            <b> <a href="http://en.wikipedia.org/wiki/Topological_sorting">topological sort</a>.</b>
+            <br /><br />
+            Learn it. It gets asked a lot. Make sure you can recognize it and do both implementations.
+        </li>
+        <li>
+            <b>You have 10MB of data mapping IP range to country code. And 100GB of IP mapping to URL.
+            Find the 10 countries with the most web traffic.
+            <br />
+            Find the 10 most visited URLs for each country.</b>
+            <br /><br />
+            First one is easy. Second requires a bit more thinking.
+        </li>
+        <li>
+            <b>
+                Given two nodes of a BST, return the least common ancestor. A node cannot be its parent. 
+                (The other variation allows a node to be its own parent.)               
+            </b>
+            <br /><br />
+            Should be pretty simple.
+        </li>
+        <li>
+            <b> 
+                Implement a <a href="http://en.wikipedia.org/wiki/Prefix_notation">prefix</a> calculator.
+                Takes in the string "+ 3 * 3 4" and spits out 15.
+            </b>
+            <br /><br />
+            Apparently the double stack implementation is impossible. :/
+        </li>
+        <li>
+            <b>
+                Add two strings. For example ""423" + "99" = "522"
+            </b>
+            <br /><br />
+            This is a fun and common problem. Try to do it as efficiently as possible. Also, does it matter that it's base 10?
+        </li>
+        <li>
+            <b>
+                Subtract two strings.
+            </b>
+            <br /><br />
+            Slightly trickier than adding. They are still both O(n) but subtraction requires more cycles.
+        </li>
+        <li>
+            <b>
+                Multiply two strings.
+            </b>
+            <br /><br />
+            This one is pretty hard and it took some thinking.
+        </li>
+        <li>
+            <b>
+                Divide two strings.
+            </b>
+            <br /><br />
+            Just kidding! I don't think this is possible in an 1 hour long interview.
+        </li>
+        <li>
+            <b>
+                Given two integer arrays and a number k. Return all pairs of numbers that sum to k. Each number of the pair has to be from a different array.
+            </b>
+            <br /><br />
+            What is the best space and time efficient way to do this? You should arrive at an linear algorithm.
+        </li>
+        <li>
+            <b>
+                Design a hash that can also return a random element in O(1).
+            </b>
+            <br /><br />
+            Kind of like an LRU cache where you need two data structures.
+        </li>
+        <li>
+            <b>
+                Design a mobile app for to control Hulu on the Xbox.
+            </b>
+            <br /><br />
+            API, UI, network protocol.
+        </li>
+        <li>
+            <b>
+                Given an n x m grid. What is the total number of rectangles? 
+                The sample below is 2 x 3 and contains 18 different rectangles.
+                If we remove a w x h portion of the grid, what is the total number of rectangles?
+            </b>
+            <table border="1" height="90" width="60">
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br /><br />
+            First part is really easy. Second part is too if you think about it first, but coding might take a little longer.
+        </li>
+        <li>
+            <b>
+                Design Twitter. Make sure you include a search function.
+            </b>
+            <br /><br />
+            Big data, distributed system, system design questions are fun!
+        </li>
+        <li>
+            <b>
+                Using this mapping: 
+                <br />"0" -> "a"
+                <br />"1" -> "b" 
+                <br />... 
+                <br />"24" -> "y" 
+                <br />"25" -> "z"
+                <br /> 
+                How many possible mappings are there for any numerical string?
+                For example, "11" can be mapped two different ways: "bb" and "j".
+            </b>
+            <br /><br />
+            Spoilers: it's like fibonacci...
+        </li>
+        <li>
+            <b>
+                Given a list of words in an alien language.
+                If you know the list is sorted in alphabetical order then how do you determine the alphabetical order of the letters?
+                For example, from the following list of English words we can determine the letter "t" must come after "b".
+                And "c" is before "z".
+                <br />list:
+                <br />cab
+                <br />cat
+                <br />zebra
+            </b>
+            <br /><br />
+            Beep! Beep! Topological sort problem detected.
+        </li>
+        <li>
+            <b>
+                Given a function f and a number d. I want you to call f after waiting d miliseconds.
+            </b>
+            <br /><br />
+            People tell me this is a classic question asked by hiring managers for senior positions.
+            It's basically design a task scheduler.
+        </li>
+        <li>
+            <b>
+                Return the first n prime numbers.
+            </b>
+            <br /><br />
+            How do you optimize this? Is it thread safe?
+        </li>
+        <li>
+            <b>
+                Given two strings a and b. Return true if any substring of a is an anagram of b.
+            </b>
+            <br /><br />
+            This can be done in linear time with linear space.
+        </li>
+        <li>
+            <b>
+                Given an array of sorted non-overlapping intervals. 
+                Insert a random interval i into the array and maintain the array's property.
+                For example, inserting (3, 6) into {(0,1), (2,4), (5,10)} results in {(0,1), (2,10)}
+            </b>
+            <br /><br />
+            Understand the array's implementation when designing the optimal solution.
+        </li>
+        <li>
+            <b>
+                Invert a binary tree. Each child now points to its parent. Return a list of the original leaf nodes.
+            </b>
+            <br /><br />
+            This is like reversing a linked list, except with a few more if statements.
+        </li>
+        <li>
+            <b>
+                Invert a graph. If node A pointed to node B then B now points to A instead. 
+            </b>
+            <br /><br />
+            There are many ways to represent a graph. Which one has the best run time and easiest implementation for this problem?
+            Also, what happens if the graph is cyclical?
+        </li>
+        <li>
+            <b>
+                Transport a 4GB file between two systems; each with 1GB of RAM. The final output needs to be compeletely randomized.
+            </b>
+            <br /><br />
+            My lack of filesystem knowledge doomed me.
+        </li>
+        <li>
+            <b>
+                Design a runner app that calculates miles per minute.
+            </b>
+            <br /><br />
+            You have a GPS API and one for the UI.
+        </li>
+        <li>
+            <b>
+                Given a size n array that contains all intergers from 0 to n-1. The elements are in random order, how do you sort it?
+            </b>
+            <br /><br />
+            I feel really dumb not getting this question.
+        </li>
+        <li>
+            <b>
+                Colors on the web are defined by a three bytes: 0x00 00 00 to 0xFF FF FF. 
+                Implement a lossy compression that maps from three bytes to three half bytes.
+                For example, 0xFF 01 FE is mapped to 0xF 0 F.
+            </b>
+            <br /><br />
+            Test all values to make sure it works.
+        </li>
+        <li>
+            <b>
+                Water fill bar graph column problem.
+            </b>
+            <br /><br />
+            There has to be a better description of this on the web.
+        </li>
+        <li>
+            <b>
+                Design a load balancer class.
+            </b>
+            <br /><br />
+            Code it out. Make sure it can add and remove machines.
+        </li>
+        <li>
+            <b>
+                Convert an array of strings into one long string. And then convert it back.
+            </b>
+            <br /><br />
+            What does the long string look like? 
+        </li>
+        <li>
+            <b>
+                Build a class for handling math expressions.
+            </b>
+            <br /><br />
+            Go fish. This question was very vague. In hindsight I should have asked for more clarifications before coding.
+        </li>
+        <li>
+            <b>
+                Given an array of unsigned ints and a number s. Return true if a pair in the array sums to s.
+            </b>
+            <br /><br />
+            Worst case is O(n^2). How do you better?
+        </li>
+        <li>
+            <b>
+                Count the number of nodes in a binary tree that have only one child.
+            </b>
+            <br /><br />
+            Recursive tree traversal. Shouldn't be too hard.
+        </li>
+        <li>
+            <b>
+                <em>"Read and analyze this code. What do you think?"</em>
+            </b>
+            <br /><br />
+            The interviewer wants you to find bugs in code. It's usually bad abstraction, concurrency issues, memory leaks, or no input sanitation.
+            The usual stuff you'd discover in a code review.
+        </li>
+        <li>
+            <b>
+               Design the Maruder's Map from Harry Potter for a tablet.
+            </b>
+            <br />
+            <iframe width="420" height="315" src="//www.youtube.com/embed/9G_SdCcYFJw" frameborder="0" allowfullscreen></iframe>
+             <br /><br />
+            Features for readibility? Data structures for storing information?
+        </li>
+        <li>
+            <b>
+                Design the system used by a local rental car agency. It needs to handle: reservations, check out, check in.
+            </b>
+            <br /><br />
+            How does it handle error conditions? Such as reserved car is not returned by previous owner?
+            What if user wants a list of all cars available between a certain date?
+            How do you scale to a national chain like Hertz?
+        </li>
+        <li>
+            <b>
+                What is the least number of comparisons needed to find the smallest and largest numbers in an array of ints?
+            </b>
+            <br /><br />
+            Worst case is 2n. How do you do better?
+        </li>
+        <li>
+            <b>
+                What is the least number of comparisons needed to find the second smallest and second largest numbers in an array of ints?
+            </b>
+            <br /><br />
+            Try to find the second largest first by itself.
+        </li>
+        <li>
+            <b>
+                An N sized array contains integerts starting from 1. Find the first missing integer.
+                For example, in [4, 1, 3, 2, 6] the first missing integer is 5.
+            </b>
+            <br /><br />
+            You can sort the array and find the missing number in O(n log n). How do you do better?
+        </li>
+        <li>
+            <b>
+                Describe the excel table problem.
+            </b>
+            <br /><br />
+            Nag me about this. I need to update it.
+        </li>
+        <li>
+            <b>
+                The transitive property means if a > b and b > c then a > c. Assume a set of numbers break this property.
+                If a > b and b > c then a > c, a == c, or a < c. Given an array of such numbers, find the maximum value.
+            </b>
+            <br /><br />
+            Is there even a guaranteed max?
+        </li>
+        <li>
+            <b>
+                What is override vs overwritten? Singleton vs Factory? cdecl/c++ calling conventions?
+            </b>
+            <br /><br />
+            More term definitions. Memorize these.
+        </li>
+        <li>
+            <b>
+                A musuem's floor space is represented by a N x M matrix.
+                A square can be a wall, a guard, or empty space.
+                Given a list of guards, calculate the mahattan distance of all empty space to the nearest guard.
+                The path cannot go through walls. This is what the output should look like:
+                <br />
+            </b>
+
+            <table height=200 width=200 border="1" cellspacing="20" cellpadding="20" style="text-align:center">
+                <tr>
+                    <td>G</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>G</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>W</td>
+                    <td>W</td>
+                    <td>W</td>
+                    <td>W</td>
+                    <td>W</td>
+                    <td>4</td>
+                    <td>W</td>
+                    <td>W</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </table>
+            <b>Bonus: Given an N x M with one guard. Place a second guard to optmize the coverage.</b>
+            <br /><br />
+            The bonus part probably has a dynamic programming solution. And you also need to define what is optimal.
+        </li>
+        <li>
+            <b>Given two strings, find the largest common substring.</b>
+            <br /><br />
+            I have no idea what the optimal solution is but I think this is a well known problem and desribed on wikipedia.
+        </li>
+        <li>
+            <b>Implement a filesystem that allows multiple readers and one writer.
+            No readers can read when the writer is writing.
+            And the writer cannot start writing if a read is in progress.</b>
+            <br /><br />
+            Concurrency fun!
+        </li>
+        <li>
+            <b>
+                Design a search engine.
+            </b>
+            <br /><br />
+            Something about servers, databases, etc.
+        </li>
+        <li>
+            <b>
+                Given a non-cyclical linked list. Each node also contains a random pointer,
+                which points to null or another node that is already in the list. Copy this list.
+            </b>
+            <br /><br />
+            There is a layman solution that uses hash tables. 
+            And a trick solution that doesn't need the hash, and I'm not sure how people can actually come up with it instead of the hash solution.
+        </li>
+        <li>
+            <b>
+                Design a URL crawler using the following APIs:
+                <br />
+                getURL() - returns a list of all pages linked from the current page.
+                <br />
+                visit() - process the current page.
+                <br />
+                Given a starting page, how do you process all pages?
+            </b>
+            <br /><br />
+            It's a graph traversal problem. But think about DFS vs BFS. 
+            If the average page has 10 links and goes 10 layers deep then how much memory does each take up?
+        </li>
+        <li>
+            <b>
+                Given an array A. Return array B where B[i] = the product of all elements in A except for A[i].
+                You cannot use division.
+            </b>
+            <br /><br />
+            Stupid puzzle problem.
+        </li>
+        <li>
+            <b>
+                Implement a filesystem that allows multiple readers and one writer.
+                No readers can read when the writer is writing.
+                And the writer cannot start writing if a read is in progress.
+            </b>
+            <br /><br />
+            Concurrency fun!
+        </li>
+        <li>
+            <b>
+                What is deadlock?
+                Race condition?
+                What happens when you add const to the end of a method declaration?
+            </b>
+            <br /><br />
+            More definitions. Answer these sussinctly.
+        </li>
+        <li>
+            <b>
+                Given a black and white image. How do you produce the mirror image?
+            </b>
+            <br /><br />
+            Unlike reversing a string, we know have to reverse the bits in the bytes.
+            This is actually a complicated problem.
+        </li>
+        <li>
+            <b>
+                Merge an array strings into one string. Return this string to the clients.
+                When given back the merged string, separate it into the array of strings again.
+            </b>
+            <br /><br />
+            This is different from the other problem because the clients can use the intermediatery string.
+            It's a more open ended question and leads to a discussion about trade offs.
+        </li>
+        <li>
+            <b>
+                Given two linked lists. Find out if they converge.
+                Return the node they first converge on.
+            </b>
+            <br /><br />
+            Edge cases: what if a list is cyclic?
+        </li>
+        <li>
+            <b>
+                Given a M by N matrix of intergers. If an entry is 0 then set the entire row and column to zero.
+            </b>
+            <br /><br />
+            How do you make this run faster?
+        </li>
+        <li>
+            <b>
+                Shift an array by k places.
+            </b>
+            <br /><br />
+            There is a trick to this.
+        </li>
+        <li>
+            <b>
+                When playing a game on the Xbox, I want to use the corresponding app on my phone. 
+                Design a robust system to handle this. The phone needs to know the XBox ID/gamertag.
+            </b>
+            <br /><br />
+            More distributed system design fun!
+        </li>
+        <li>
+            <b>
+                Given two parameters: n and c. Print out all integers from 1 to n in c columns.
+                For example, the output for n = 13 and c = 4 looks like this.
+            </b>
+
+            <table height=160 width=100 border="0" cellspacing="2" cellpadding="2">
+                <tr>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>12</td>
+                </tr>
+            </table>
+            <br />
+            This is easy. Part 2 is below.
+        </li>
+        <li>
+            <b>
+                In the previous problem, notice there are empty spaces in the last column.
+                Change the algorithm to move the empty spaces in the last row. Like this:
+            </b>
+
+            <table height=160 width=100 border="0" cellspacing="2" cellpadding="2">
+                <tr>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                </tr>
+            </table>
+            <br />
+            For some reason, I just could not figure out the second part of this problem. Felt so dumb.
+            Then again, I was exhausted.
+            It was six hours of straight interviews without any breaks--my lunch buddy decided to turn my lunch into an interview.
+            Note to companies: please don't do this. Us poor candidates really need our break.
+        </li>
+        <li>
+            <b>
+                GetXY(), DrawX(), DrawY().
+            </b>
+            <br /><br />
+            Remind me to update and describe this problem using drawings.
+        </li>
+        <li>
+            <b>
+                Given a list of lists of strings such as:<br />
+                {("a1", "a2"), <br />
+                ("b1")<br />
+                ("c1", "c2", "c3")}<br />
+                Print them in this order: "a1", "b1", "c1", "a2", "c2", "c3"
+            </b>
+            <br /><br />
+            Again choice of data structure makes or breaks this problem.
+        </li>
+        <li>
+            <b>
+                What would you do if you had a billion dollars?
+            </b>
+            <br /><br />
+            Someone asked this immediately after a challenging system design question.
+            I was totally caught off guard and just mumbled.
+            Though I am very proud of myself for not blurting out "Hookers and blow."
+        </li>
+        <li>
+            <b>Do you really want to work for us?
+            Are we your first choice?
+            Who else are you looking at?
+            Are we in the running?
+            </b> 
+            <br /><br />
+            This often get asked at the end of an interview.
+            Or it's the first question asked when the recruiter calls after an interview.
+            Companies do this to gage your interest and excitement level. 
+            They don't want to give an offer to someone who doesn't want to work for them.
+            <br />
+            I told my Hulu referral that I rather go to Google (recruiter told him to ask me). 
+            Then I told my Google interviewers that I want to be at 343 Industries or Redfin.
+            Guess how many offers I got from Hulu and Google.
+        </li>
+        <li>
+            <b>Where do you see yourself in 5 years?</b>
+            <br /><br />
+            Not at this stupid company!
+            <br />
+            -_- Did you read the previous question? In general, try to say things they want to hear until you have an offer.
+        </li>
+    </ol>
+   
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51369756-1', 'berkeley.edu');
+        ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>

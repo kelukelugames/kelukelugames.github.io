@@ -1,11 +1,4 @@
-﻿body {  
-    margin: 0px;
-    padding : 0 15px;
-    font : 100.9% helvetica, arial, sans-serif;
-    background-color: white;
-    color: #000000;    
-}
-
+﻿
 #backbutton
 {
     position: fixed;
@@ -38,8 +31,4 @@ ol value
     color: white;
     font-size: 100px;
 
-}
-
-body {
-    max-width: 1100px;
 }

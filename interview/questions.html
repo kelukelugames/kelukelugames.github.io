@@ -54,6 +54,12 @@
     <div class="container">
         <h1>Interview Questions</h1>
 
+        <p>
+            <strong>Update: </strong> I removed all of the coding questions because 
+            <a href="https://leetcode.com/problemset/algorithms/"> https://leetcode.com/problemset/algorithms/ </a> is
+            infinitely more useful.
+        </p>
+
         There are three types of interviews: <a href="#informational">informationals</a>, <a href="#screen">phone screens</a>, and <a href="#onsite">onsites</a>.
         The informational is the first meeting with a company and it is usually a phone chat with a recruiter.
         A screening is a one hour test, by phone or in person, to assess your technical skills.
@@ -143,131 +149,6 @@
             </li>
 
             <li>
-                <b>Implement an arraylist. Need constant time for adding and removing elements.</b>
-                <br /><br />
-                Implementing an arrayList/vector is generic but I couldn’t figure out a good way to fill up the gaps in the array when elements were removed.
-                If you figure out a good solution then please share it with us.
-            </li>
-
-            <li>
-                <b>
-                    Given a maze represented by a grid and a robot. Write code that helps the robot travel from a starting point to the end.
-                    The robot has the following API:
-                    <br /><br />
-                    Interface robot<br /><!--TODO: learn how to do indentation-->
-                    {<br />
-                    CanGo() //checks to see if it can travel in the direction it is facing.<br />
-                    TurnRight() // changes direction<br />
-                    IsAtFinish() //returns true if standing at the end of the maze.<br />
-                    Go() //moves 1 step in the direction it is facing.<br />
-                    }<br /><br />
-
-                    r - starting point. <br />
-                    X - blocked area. <br />
-                    f - finish.
-                    <br /><br />
-                </b>
-                <table height=160 width=160 border="1" cellspacing="2" cellpadding="2">
-                    <tr>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td>X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>r</td>
-                        <td></td>
-                        <td></td>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td></td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>f</td>
-                        <td>X</td>
-                        <td>X</td>
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                        <td>X</td>
-                    </tr>
-                </table>
-                <br /><br />
-                <b>Hint: the accesible paths have only a width of 1.</b>
-                <br /><br />
-                Can be solved as generic graph traversal problem. But if you take advanage of the hint then you don't need to remember where you have traveled.
-            </li>
-
-            <li>
-                <b>Output the elements of a binary search tree in order. Follow up: Given the root node and another node of the BST, find the next node in order.</b>
-                <br /><br />
-                Part 1 is basic tree traversal. And Part 2 is a generic BST problem that you should master.
-            </li>
-
-            <li>
-                <b>Find the duplicate elements in a string.</b>
-                <br /><br />
-                This is doable in linear time with a single pass.
-            </li>
-
-            <li>
                 <b>Describe abstraction, encapsulation, polymorphism.</b>
                 <br /><br />
                 I also got asked: is-a and has-a?
@@ -279,94 +160,6 @@
                 And are probably asked to see how well you can communicate a simple idea.
                 Make sure you have a clear and concise answer for each.
             </li>
-
-            <li>
-                <b>Design an LRU cache.</b>
-                <br /><br />
-                Standard questions that gets asked a lot. Hint: it requires two data structures.
-            </li>
-
-            <li>
-                <b>Given an array of positive and negative integers. Find the starting index and length of sub-array with the largest sum.</b>
-                <br /><br />
-                Can be done in linear time with constant memory.
-            </li>
-
-            <li>
-                <!--TODO: draw tree pictures-->
-                <b>
-                    The nodes in a standard binary tree contain a next pointer that points to NULL.
-                    Change the next pointer to point to the nearest node to the right and on the same level.
-                </b>
-                <br /><br />
-                Most people solve this using queues, which is O(N) space.
-                You can really impress your interviewer if you do it with O(1) space.
-                I giggled like a school girl when two different companies asked this in the same day.
-            </li>
-
-            <li>
-                <b>
-                    Given an n x m matrix of ints.
-                    Each int/square has a value of 1 or 0.
-                    Two squares are connected if both have a value of 1 and they are next to each other (diagonals do not count).
-                    The area is the sum of all connected squares.
-                    A single square has an area of 1. Calculate the median of all the areas.
-                    n and m are 1024 at most.
-                </b>
-                <br /><br />
-                <table height=100 width=120 border="1" cellspacing="2" cellpadding="2">
-
-                    <tr>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-                <br /><br />
-                <b>
-                    The example has three areas with sizes 1, 3, and 4.
-                    The median is 3.
-                </b>
-                <br /><br />
-                Think about which data structure to use for the median for best performance.
-                There are also multiple ways to parse the areas.
-            </li>
-
             <li>
                 <b>
                     Databases for Twitter are eventually consistent.
@@ -389,43 +182,6 @@
                 <b>Class vs instance? Follow up: what is a virtual function and how are they implemented? </b>
                 <br /><br />
                 <a href="http://en.wikipedia.org/wiki/Virtual_method_table">http://en.wikipedia.org/wiki/Virtual_method_table</a>
-            </li>
-
-            <li>
-                <b>Find all of the phone numbers in 50k files? </b>
-                <br /><br />
-                Use regular expression.
-                Know how to do this with command line commands.
-                Or in a Perl script.
-            </li>
-
-            <li>
-                <b>Reverse a null terminated string. </b>
-                <br /><br />
-                An easy question does not mean the interview is a cupcake.
-                I assume easy questions are graded harder--how fast and how well did you finish?
-                Test cases, etc.
-            </li>
-
-            <li>
-                <b>Implement binary search to find values from an array of sorted floats. </b>
-                <br /><br />
-                Same as above. Beaware of cupcakes.
-            </li>
-
-            <li>
-                <b>Convert a string to a long. </b>
-                <br /><br />
-                Standard atoi.
-            </li>
-
-            <li>
-                <b>
-                    Create the add and delete functions for a tri-nary search tree. It is like a binary search tree except there is a middle pointer and duplicates are allowed.
-                    This middle pointer points to nodes with identical values.
-                </b>
-                <br /><br />
-                Not really different from BST.
             </li>
         </ol>
 

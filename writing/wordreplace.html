@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://kelukelu.me/ga.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("nav").load("http://kelukelu.me/header.html");    
+        });
+    </script>
+
+    <title>cloud to butt in 3</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    </nav>
+
+    <div class="container">
+        <h1>Write a cloud to butt Chrome extension in three minutes</h1>
+        <p>
+            Writing a chrome extension to replace words on a webpage is easy. Follow these 5 steps to make one.
+        </p>
+        <p>
+            <strong>Step 1: </strong>
+            Create a directory called "myChromeExtension".
+            <div>
+                <code>
+                    mkdir myChromeExtension/ <br>
+                    cd myChromeExtension/
+                </code>
+            </div>
+        </p>
+        <p>
+            <strong>Step 2: </strong>
+            Create the file "manifest.json" and copy the following into it.
+
+            <pre class="prettyprint lang-javascript">
+    {
+        "manifest_version": 2,
+        "name": "Word Replacer",
+        "version": "1.0",
+        "description": "Replace [word 1] with [word 2].",
+        "content_scripts": 
+        [
+            {
+                "matches": ["*://*/*"],
+                "js": ["content_script.js"],
+                "run_at": "document_end"
+            }
+        ]
+    }
+            </pre>
+        </p>
+        <p>
+            <strong>Step 3: </strong>
+            Createe the file "content_scripts.js" and copy the following.
+            <pre class="prettyprint lang-javascript">
+    walk(document.body);
+
+    function walk(node) 
+    {var child, next;
+
+        switch ( node.nodeType )  
+        {
+            case 1:  // Element
+            case 9:  // Document
+            case 11: // Document fragment
+                child = node.firstChild;
+                while ( child ) 
+                {
+                    next = child.nextSibling;
+                    walk(child);
+                    child = next;
+                }
+                break;
+
+            case 3: // Text node
+                handleText(node);
+                break;
+            default:
+                break;
+        }
+    }
+
+    function handleText(textNode) 
+    {
+        var text = textNode.nodeValue;
+
+        text = text.replace(/programming/g, "glassblowing");
+        text = text.replace(/Programming/g, "Glassblowing");
+        text = text.replace(/PROGRAMMING/g, "GLASSBLOWING");
+
+        text = text.replace(/TRUMP/g, "DUCK");
+        text = text.replace(/Trump/g, "Duck");
+
+        text = text.replace(/\bHacker\b/g, "Pooper");
+        text = text.replace(/\bhacker\b/g, "pooper");
+        text = text.replace(/\bHACKER\b/g, "HACKER");
+        
+        textNode.nodeValue = text;
+    }
+            </pre>
+        </p>
+
+        <p>
+            <strong>Step 4: </strong>
+            Open the Chrome browser and type <code>chrome://extensions/</code> into the address bar. Click the checkbox to nable "Developer mode".
+        </p>
+
+        <p>
+            <strong>Step 5: </strong>
+            Click on "Open unpacked extension" and select the directory "myChromeExtension".
+        </p>
+
+        <p>
+            You are done! Now go browse the internet!
+        </P>
+        <div>
+post some pictures
+        </div>
+        
+        <p>
+            <strong>Further reading</strong>
+            <ol>
+                <li>
+                    <a href="https://developer.chrome.com/extensions/getstarted" target="_blank">
+                        More on making Chrome extensions.
+                        <i class="fa fa-external-link"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/panicsteve/cloud-to-butt/tree/master/Source" target="_blank">
+                        See panicsteve's github for source files.
+                        <i class="fa fa-external-link"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://regexone.com/" target="_blank">
+                        Learn more about regular expressions.
+                        <i class="fa fa-external-link"></i>
+                    </a>
+                </li>
+            </ol>
+        </p>
+    </div>
+
+
+</body>
+
+    
+</html>

@@ -25,13 +25,15 @@ $(document).ready(function() {
 
 	candidateQuotes = [
 	"My girlfriend doesn't want to move to California.",
+	"I don't know if I can take the bus. I have plantar fascittis.",
+	"When are we going public?",
 	"I'm not going to lie. Money is important.",
 	"Of all the important things, money is the least important.",
 	"That's not very competitive. I know lots of companies that pay more.",
 	"I'm looking for over 250.",
 	"You forgot to give me to lunch. I would have done a lot better.",
 	"I'm tempted to join Hooli, can you please try to match them?",
-	"Everyone says I should join your company, but all of my friends who are devs says I should go to Hoolie. Why is that?",
+	"Everyone says I should join your company, but all of my friends who are devs says I should go to Hooli. Why is that?",
 	"Is it socially acceptable to eat In n' Out five days in a row?",
 	"Can I have a sign on bonus? I need it for my Porsche."];
 	setQuote();

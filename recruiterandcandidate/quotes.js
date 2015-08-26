@@ -31,7 +31,7 @@ $(document).ready(function() {
 	"Of all the important things, money is the least important.",
 	"That's not very competitive. I know lots of companies that pay more.",
 	"I'm looking for over 250k.",
-	"You forgot to give me to lunch. I would have done a lot better.",
+	"You forgot to feed me lunch. I would have done a lot better.",
 	"I'm tempted to join Hooli, can you please try to match them?",
 	"Everyone says I should join your company, but all of my friends who are devs says I should go to Hooli. Why is that?",
 	"Is it socially acceptable to eat In n' Out five days in a row?",

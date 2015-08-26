@@ -29,7 +29,8 @@ $(document).ready(function() {
 	});
 
 	function setQuote() {
-		if (Math.random() < 0.5) {
+		var threshold = recruiterQuotes.length / (recruiterQuotes.length + candidateQuotes.length);
+		if (Math.random() < threshold) {
 			document.getElementById("header").innerHTML = "a recruiter says";
 			document.getElementById("quote").innerHTML = '"' + recruiterQuotes[Math.floor(Math.random() * recruiterQuotes.length)] + '"';
 		} else {

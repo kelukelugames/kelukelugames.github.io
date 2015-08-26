@@ -19,7 +19,6 @@ $(document).ready(function() {
 	"We are the Google of BI.",
 	"Everyone is an owner.",
 	"This is the first time I have been asked that question.",
-
 	"I work at Unicorn with Chris C (CYC), and speaks very highly of you. He also mentioned that you've done great programming work (I'm curious about your interest in open source, we're a python shop) and that you could be an awesome fit for what we're doing here! I would love to chat with you about where Unicorn is going, and even show you around if you'd like to take a look at the lab and see what were doing! Here is some information on Hooli as well (please also click the links in my signature!)",
 	"I'm hiring and thought that you would be a good fit for the position that I'm trying to fill - details below. Let me know whether you're interested in discussing this opportunity. If you aren't but know someone who is, I'd love a referral!"];
 
@@ -39,6 +38,7 @@ $(document).ready(function() {
 	"How fast can we move?",
 	"How many women are on the team?",
 	"Have you published demographics data?",
+	"Do you negotiate?"
 	"Can I have a sign on bonus? I need it for my Porsche."];
 	setQuote();
 

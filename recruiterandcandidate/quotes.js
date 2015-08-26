@@ -30,11 +30,15 @@ $(document).ready(function() {
 	"I'm not going to lie. Money is important.",
 	"Of all the important things, money is the least important.",
 	"That's not very competitive. I know lots of companies that pay more.",
-	"I'm looking for over 250.",
+	"I'm looking for over 250k.",
 	"You forgot to give me to lunch. I would have done a lot better.",
 	"I'm tempted to join Hooli, can you please try to match them?",
 	"Everyone says I should join your company, but all of my friends who are devs says I should go to Hooli. Why is that?",
 	"Is it socially acceptable to eat In n' Out five days in a row?",
+	"When can I expect to hear back?",
+	"How fast can we move?",
+	"How many women are on the team?",
+	"Have you published demographics data?",
 	"Can I have a sign on bonus? I need it for my Porsche."];
 	setQuote();
 

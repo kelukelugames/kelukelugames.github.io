@@ -16,7 +16,7 @@ $(document).ready(function() {
 	"I see you just left Hooli and I'm assuming you have plans already in place? Either way it would be great to connect. I focus on quantitative trading and please check my recommendations if you need assurance of my work.",
 	"Not sure if you open to making a move from Hooli, but we had a few Engineers on our team (Transaction Services) pull some names and yours was one they were interested in talking to.",
 	"We're always looking for great engineers.",
-	"We are the Google of BI.",
+	"We are the Hooli of BI.",
 	"Everyone is an owner.",
 	"This is the first time I have been asked that question.",
 	"I work at Unicorn with Chris C (CYC), and speaks very highly of you. He also mentioned that you've done great programming work (I'm curious about your interest in open source, we're a python shop) and that you could be an awesome fit for what we're doing here! I would love to chat with you about where Unicorn is going, and even show you around if you'd like to take a look at the lab and see what were doing! Here is some information on Hooli as well (please also click the links in my signature!)",

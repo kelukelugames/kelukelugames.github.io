@@ -39,6 +39,8 @@ $(document).ready(function() {
 	"How many women are on the team?",
 	"Have you published demographics data?",
 	"Do you negotiate?",
+	"Isn't lunch next?",
+	"Do you provide lunch?",
 	"Can I have a sign on bonus? I need it for my Porsche."];
 	setQuote();
 

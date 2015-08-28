@@ -16,10 +16,10 @@ $(document).ready(function() {
 	"I see you just left Hooli and I'm assuming you have plans already in place? Either way it would be great to connect. I focus on quantitative trading and please check my recommendations if you need assurance of my work.",
 	"Not sure if you open to making a move from Hooli, but we had a few Engineers on our team (Transaction Services) pull some names and yours was one they were interested in talking to.",
 	"We're always looking for great engineers.",
-	"We are the Hooli of BI.",
+	"Getting into business intelligence is like starting another social network. There are too many. But we are the Hooli of BI.",
 	"Everyone is an owner.",
+	"Everyone at Unicorn is excited to have you. If you go to Hooli then we can still be friends.",
 	"This is the first time I have been asked that question.",
-	
 	"I'm hiring and thought that you would be a good fit for the position that I'm trying to fill - details below. Let me know whether you're interested in discussing this opportunity. If you aren't but know someone who is, I'd love a referral!"];
 
 	candidateQuotes = [
@@ -41,7 +41,11 @@ $(document).ready(function() {
 	"Do you negotiate?",
 	"Isn't lunch next?",
 	"Do you provide lunch?",
+	"My girlfriend and I are staring a family. More compensation would make the decision easier.",
+	"What's an example of non-technical feedback you have given to someone?",
+	"I'm joining Unicorn because they are going to make me a millionaire.",
 	"Can I have a sign on bonus? I need it for my Porsche."];
+	
 	setQuote();
 
 	$("button").on("click", function() {

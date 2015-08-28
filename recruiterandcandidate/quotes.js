@@ -20,6 +20,7 @@ $(document).ready(function() {
 	"Everyone is an owner.",
 	"Everyone at Unicorn is excited to have you. If you go to Hooli then we can still be friends.",
 	"This is the first time I have been asked that question.",
+	"Do you know who I am?",
 	"I'm hiring and thought that you would be a good fit for the position that I'm trying to fill - details below. Let me know whether you're interested in discussing this opportunity. If you aren't but know someone who is, I'd love a referral!"];
 
 	candidateQuotes = [
@@ -41,7 +42,7 @@ $(document).ready(function() {
 	"Do you negotiate?",
 	"Isn't lunch next?",
 	"Do you provide lunch?",
-	"My girlfriend and I are staring a family. More compensation would make the decision easier.",
+	"My girlfriend and I are starting a family. More compensation would make the decision easier.",
 	"What's an example of non-technical feedback you have given to someone?",
 	"I'm joining Unicorn because they are going to make me a millionaire.",
 	"Can I have a sign on bonus? I need it for my Porsche."];

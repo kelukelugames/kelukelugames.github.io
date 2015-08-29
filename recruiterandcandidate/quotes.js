@@ -14,7 +14,7 @@ $(document).ready(function() {
 	"After coming across your profile within our database, I feel that your background and experience is a very good match for a current position search that I am doing here at Hooli. The purpose of me reaching out is to determine if you would be interested in confidentially exploring this opportunity with us.",
 	"If you have time this week I would like to share a couple of roles I am currently working. Possibly you may know someone or have an interest. If you would let me know your availability I will coordinate a time to call.",
 	"I see you just left Hooli and I'm assuming you have plans already in place? Either way it would be great to connect. I focus on quantitative trading and please check my recommendations if you need assurance of my work.",
-	"Not sure if you open to making a move from Hooli, but we had a few Engineers on our team (Transaction Services) pull some names and yours was one they were interested in talking to.",
+	"Not sure if you are open to making a move from Hooli, but we had a few Engineers on our team pull some names and yours was one they were interested in talking to.",
 	"We're always looking for great engineers.",
 	"Getting into business intelligence is like starting another social network. There are too many. But we are the Hooli of BI.",
 	"Everyone is an owner.",
@@ -54,13 +54,14 @@ $(document).ready(function() {
 	});
 
 	function setQuote() {
-		var threshold = recruiterQuotes.length / (recruiterQuotes.length + candidateQuotes.length);
-		if (Math.random() < threshold) {
-			document.getElementById("header").innerHTML = "a recruiter says";
-			document.getElementById("quote").innerHTML = '"' + recruiterQuotes[Math.floor(Math.random() * recruiterQuotes.length)] + '"';
-		} else {
-			document.getElementById("header").innerHTML = "a candidate says";
-			document.getElementById("quote").innerHTML = '"' + candidateQuotes[Math.floor(Math.random() * candidateQuotes.length)] + '"';
-		}
+		recruiterQuote = "a recruiter says: " +
+			'"' + recruiterQuotes[Math.floor(Math.random() * recruiterQuotes.length)] + '"';
+		candidateQuote =  "a candidate says: " + 
+			'"' + candidateQuotes[Math.floor(Math.random() * candidateQuotes.length)] + '"';
+
+		var swap = (Math.random() > 0.5);
+
+		document.getElementById("quote1").innerHTML = swap ? recruiterQuote : candidateQuote;
+		document.getElementById("quote2").innerHTML = swap ? candidateQuote : recruiterQuote;
 	}
 });

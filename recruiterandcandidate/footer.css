@@ -21,3 +21,8 @@ body {
 .container .text-muted {
   margin: 20px 0;
 }
+
+.quotes {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

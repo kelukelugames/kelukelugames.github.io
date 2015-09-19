@@ -6,19 +6,20 @@
 	background-color: #0EBEFF;
     margin: 25px;
     font-family: sans-serif;
-    font-style: italic;
     font-size: 24px;
     padding: 20px;
     border-radius: 10px;
-}
-
-#quote1 {
     width: 70%;
-	float: left;
 }
 
-#quote2 {
-    width: 70%;
-	float: right;
+.quote-container:nth-of-type(1) .quote {
+    float: left;
 }
 
+.quote-container:nth-of-type(2) .quote {
+    float: right;
+}
+
+#quote1, #quote2 {
+    font-style: italic;
+}

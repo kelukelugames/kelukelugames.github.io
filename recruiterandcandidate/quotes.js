@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	recruiterQuotes = [
+	var recruiterQuotes = [
 	"You are very close to becoming a senior developer. We will promote you in no time.",
 	"We don't negotiate.",
 	"I can't answer that because of legal reasons.",
@@ -24,7 +24,7 @@ $(document).ready(function() {
 	"We are all owners.",
 	"I'm hiring and thought that you would be a good fit for the position that I'm trying to fill - details below. Let me know whether you're interested in discussing this opportunity. If you aren't but know someone who is, I'd love a referral!"];
 
-	candidateQuotes = [
+	var candidateQuotes = [
 	"My girlfriend doesn't want to move to California.",
 	"I don't know if I can take the bus. I have plantar fascittis.",
 	"When are we going public?",
@@ -48,6 +48,9 @@ $(document).ready(function() {
 	"I'm joining Unicorn because they are going to make me a millionaire.",
 	"Can I have a sign on bonus? I need it for my Porsche."];
 	
+	var candidatePerson = "- candidate -";
+	var recruiterPerson = "- recruiter -";
+
 	setQuote();
 
 	$("button").on("click", function() {
@@ -55,14 +58,15 @@ $(document).ready(function() {
 	});
 
 	function setQuote() {
-		recruiterQuote = "a recruiter says: " +
-			'"' + recruiterQuotes[Math.floor(Math.random() * recruiterQuotes.length)] + '"';
-		candidateQuote =  "a candidate says: " + 
-			'"' + candidateQuotes[Math.floor(Math.random() * candidateQuotes.length)] + '"';
+		recruiterQuote = '"' + recruiterQuotes[Math.floor(Math.random() * recruiterQuotes.length)] + '"';
+		candidateQuote = '"' + candidateQuotes[Math.floor(Math.random() * candidateQuotes.length)] + '"';
 
 		var swap = (Math.random() > 0.5);
 
 		document.getElementById("quote1").innerHTML = swap ? recruiterQuote : candidateQuote;
 		document.getElementById("quote2").innerHTML = swap ? candidateQuote : recruiterQuote;
+
+		document.getElementById("person1").innerHTML = swap ? recruiterPerson : candidatePerson;
+		document.getElementById("person2").innerHTML = swap ? candidatePerson : recruiterPerson;
 	}
 });

@@ -21,6 +21,7 @@ $(document).ready(function() {
 	"Everyone at Unicorn is excited to have you. If you go to Hooli then we can still be friends.",
 	"This is the first time I have been asked that question.",
 	"Do you know who I am?",
+	"We are all owners.",
 	"I'm hiring and thought that you would be a good fit for the position that I'm trying to fill - details below. Let me know whether you're interested in discussing this opportunity. If you aren't but know someone who is, I'd love a referral!"];
 
 	candidateQuotes = [

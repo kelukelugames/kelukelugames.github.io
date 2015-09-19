@@ -1,6 +1,23 @@
+.row {
+    margin: 40px;
+}
+
 .quote {
 	background-color: #0EBEFF;
-	background-clip: padding-box;
-    padding: 20px 10px 60px 10px;
-    margin-bottom: 40px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#quote1 {
+    width: 70%;
+	float: left;
+}
+
+#quote2 {
+    width: 70%;
+	float: right;
 }

@@ -4,7 +4,7 @@
 
 .quote {
 	background-color: #0EBEFF;
-    margin: 20px;
+    margin: 25px;
     font-family: sans-serif;
     font-style: italic;
     font-size: 24px;
@@ -21,3 +21,4 @@
     width: 70%;
 	float: right;
 }
+

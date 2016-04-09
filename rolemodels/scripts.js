@@ -8,7 +8,7 @@ var clips = ['gUmMBF7uYLQ?start=38&end=58',
 	'uK50iI_i_nY?start=123&end=273',
 	'_MP5w9yAbgA?start=4&end=139',
 	'VU4pP1a8MQc?start=48&end=67',
-	'ys0M9u0wQUA'];
+	'ys0M9u0wQUA?start=1'];
 
 var PREFIX = '<iframe width="560" height="315" src="https://www.youtube.com/embed/';
 var POSTFIX = '&version=3" frameborder="0" allowfullscreen></iframe>';

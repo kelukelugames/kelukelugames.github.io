@@ -28,7 +28,7 @@ function addRow(waitTime) {
 	clearInterval(interval);
 	
 	if (clips.length > 0) {
-		waitTime = Math.min(waitTime * 5, 500);
+		waitTime = Math.min(waitTime * 10, 500);
 		interval = setInterval(addRow, waitTime, waitTime);
 	}
 }
